@@ -36,4 +36,10 @@ label{
     font-weight: 600;
     font-size: 12px;
 }
-
+ul{
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 0px !important;
+    max-height: 25vh;
+    overflow-y: scroll;
+}

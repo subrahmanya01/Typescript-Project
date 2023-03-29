@@ -19,14 +19,9 @@
         <h6>Logs:</h6>
         <hr>
 
-        <div class="card">
-            <h5 class="card-header text-primary">Featured</h5>
-            <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        <ul class="item-list">
-          
+       
+        <ul class="item-list" id="item_list">
+
         </ul>
     </div>
 
@@ -37,8 +32,8 @@
         <form class="form-group p-10">
           <label for="Type">Type</label>
             <select class="form-select form-select mb-3" id="Type" aria-label=".form-select-lg example">
-                <option value="1">Invoice</option>
-                <option value="2">Payment</option>
+                <option value="Invoice">Invoice</option>
+                <option value="Payment">Payment</option>
               </select>
               <label for="to-from">To/From</label>
               <input type="text" name="to-from" id="to-from" class="form-control mb-3" placeholder="" aria-describedby="helpId">
@@ -49,10 +44,10 @@
               <div class="input-group mb-3 width-set">
                 <span class="input-group-text">$</span>
                 <span class="input-group-text">0.00</span>
-                <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                <input type="number" id="amount" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
               </div>
     
-              <button class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
         </form>
      </div>
   </div>
@@ -60,6 +55,6 @@
 
   
 
-  <script src='sandbox.js'></script>
+  <script type="module" src='app.js'></script>
 </body>
 </html>
